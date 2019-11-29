@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecommerce web site</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+<body>
+<div class="top-nav-bar">
+	<div class="search-box">
+		<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+		<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+		<!-- <img src="img/logo.png" class="logo"> -->
+		<h1 class="logo"> LOGO</h1>
+		<input type="text" class="form-control">
+		<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+	</div>
+	 <div class="menu-bar">
+		<ul>
+			<!-- <li><a href="home1.html">Cart</a></li> -->
+			<li><a href="womensignin.html">Sign</a></li>
+			<li><a href="womenlogin.html">login</a></li>
+		</ul>
+</div>
+</div>
+<section class="header">
+	<div class="side-menu" id="side-menu">
+		<ul>
+			<h3>Category</h3>
+			<!-- <li>On Sale<i class="fa fa-angle-right"></i>
+			<ul>
+				<li>WOMEN</li>
+				<li>MEN</li>
+				<li>SPORTS,BOOK & MORE</li>
+				<li>ELECTRONICS</li>
+				<li>TV & APPLIANCES</li>
+				<li>BABY & KIDS</li>
+				<li>HOME & FURNITURES</li>
+			</ul>
+			</li> -->
+			<li><a href="#">WOMEN</a><i class="fa fa-angle-right"></i>
+			<ul>
+				<li><a href="women.html">Jewellery</a></li>
+				<li><a href="women1e.html">Shoes</a></li>
+				<li><a href="women2e.html">Fashion Saree Designs</a></li>
+				<li><a href="women3e.html">Fashion Dress</a></li>
+				<li><a href="women4e.html">Makeup Kit</a></li>
+				<li><a href="women5e.html">Earings</a></li>
+			</ul>
+			</li>
+			<li><a href="#">MEN</a><i class="fa fa-angle-right"></i>
+			<ul>
+				<li><a href="men.html">Formal Shirts</a></li>
+				<li><a href="men1.html">Designer Kurta</a></li>
+				<li><a href="men2.html">Suits designs</a> </li>
+				<li><a href="men3.html">Formal shoes</a> </li>
+				<li><a href="men4.html">T Shirts</a></li>
+			</ul>
+			</li>
+			<li><a href="#">SPORTS,BOOK & MORE</a><i class="fa fa-angle-right"></i>
+			<ul>
+				<li><a href="sports.html">Sports boll</a></li>
+				<li><a href="sports1.html">Library books</a></li>
+				<li><a href="sports2.html">Badminton</a></li>
+				<li><a href="sports3.html">Cricket Items</a></li>
+			</ul>
+			</li>
+			<li><a href="#">ELECTRONICS</a><i class="fa fa-angle-right"></i>
+			<ul>
+				<li><a href="ele1.html">Smart Phone</a></li>
+				<li><a href="ele2.html">Microwave Oven</a></li>
+				<li><a href="ele3.html">Refrigerator</a></li>
+				<li><a href="ele4.html">Washing Machine</a></li>
+				<li><a href="ele5.html">Nickle Ceiling Fan</a></li>
+			</ul>
+			</li>
+			<li><a href="#">TV & APPLIANCES</a><i class="fa fa-angle-right"></i>
+			<ul>
+				<li><a href="tv1.html">LED TV</a></li>
+				<li><a href="tv2.html">Smart AC</a></li>
+				<li><a href="tv3.html">Iron Box</li>
+			</ul>
+			</li>
+				<!-- <li><a href="#">TV & APPLIANCES</a><i class="fa fa-angle-right"></i>
+			<ul>
+				<li><a href="tv1.html">LED TV</a></li>
+				<li><a href="tv2.html">Smart AC</a></li>
+				<li><a href="tv3.html">Iron Box</li>
+			</ul>
+			</li> -->
+			
+			<li><a href="#">HOME & FURNITURES</a><i class="fa fa-angle-right"></i>
+			<ul>
+				<li><a href="home1.html">Chaise Loungers Sofas</a></li>
+				<li><a href="home2.html">Lamps</a></li>
+				<li><a href="home3.html">Royal oak Sofa</a></li>
+				<li><a href="home4.html">Dining Table</a></li>
+			</ul>
+			</li>
+			<li><a href="#">Baby & Kits</a><i class="fa fa-angle-right"></i>
+				<ul>
+					<li><a href="baby1.html">Baby Kits</a></li>
+					<li><a href="baby1.html">Fashion Dress</a></li>
+					<li><a href="baby1.html">Fashion shoes</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="slider">
+		<div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/banner.webp" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/banner6.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/banner7.jfif" class="d-block w-100">
+    </div>
+  </div>
+  <ol class="carousel-indicators">
+      <li data-target="#slider" data-slide-to="0" class="active"></li>
+      <li data-target="#slider" data-slide-to="1"></li>
+      <li data-target="#slider" data-slide-to="2"></li>
+    </ol>
+</div>
+	</div>
+</section>
+<!-- featured-categories -->
+<section class="featured-categories">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="img/ca1.webp">
+			</div>
+			<div class="col-md-4">
+				<img src="img/fa2.jfif">
+			</div>
+			<div class="col-md-4">
+				<img src="img/fa3.jfif">
+			</div>
+		</div>
+</section>
+<!--  On sale product -->
+<section class="on-sale">
+	<div class="container">
+		<div class="title-box">
+			<h2>on sale</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="img/w6.jfif">
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+					</div>
+				</div>
+				<div class="product-button text-center" id="center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Fancy Hearing</h3>
+					<h5>$400.00</h5>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="img/m4.jfif">
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+					</div>
+				</div>
+				<div class="product-button text-center" id="center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Formal shoes</h3>
+					<h5>$500.00</h5>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="img/el2.jfif">
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+					</div>
+				</div>
+				<div class="product-button text-center" id="center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Refrigerator</h3>
+					<h5>$40000.00</h5>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="img/m5.jfif">
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+					</div>
+				</div>
+				<div class="product-button text-center" id="center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Wedding suits </h3>
+					<h5>$60000.00</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- new product -->
+<section class="new-product">
+	<div class="container">
+		<div class="title-box">
+			<h2>New Arrivals</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="img/w4.jfif">
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+					</div>
+				</div>
+				<div class="product-button text-center" id="center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Fashion Dress</h3>
+					<h5>$2000.00</h5>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="img/el4.jfif">
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+					</div>
+				</div>
+				<div class="product-button text-center" id="center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Microwave Oven</h3>
+					<h5>$50000</h5>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="img/h5.jfif">
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+					</div>
+				</div>
+				<div class="product-button text-center" id="center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Chaise Loungers Sofas</h3>
+					<h5>$40000.00</h5>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="product-top">
+					<img src="img/el6.jfif">
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+					</div>
+				</div>
+				<div class="product-button text-center" id="center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Washing Machine</h3>
+					<h5>$8000.00</h5>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+<section class="website-features">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 feature-box">
+				<img src="img/100.jfif">
+				<div class="feature-text">
+					<p><b>100% Original items </b> are avilable at companey</p>
+				</div>
+			</div>
+			<div class="col-md-3 feature-box">
+				<img src="img/30.png">
+				<div class="feature-text">
+					<p><b>Return within 30days </b> of receiving your order.</p>
+				</div>
+			</div>
+			<div class="col-md-3 feature-box">
+				<img src="img/free.png">
+				<div class="feature-text">
+					<p><b>Get free delivery for every</b> order on more than price</p>
+				</div>
+			</div>
+			<div class="col-md-3 feature-box">
+				<img src="img/pay.jfif">
+				<div class="feature-text">
+					<p><b>Pay Online through multiple </b>options (Cart payment/Net banking)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="fotter">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-3">
+				<h1>ABOUT</h1>
+				<p>Contact us</p>
+				<p>About us</p>
+				<p>Careers</p>
+				<p>Privacy Policy</p>
+			</div>
+
+			<div class="col-md-3">
+				<h1>HELP</h1>
+				<p>Payments</p>
+				<p>Shipping</p>
+				<p>Cancellation & returns</p>
+				<p>FAQ</p>
+			</div>
+			<div class="col-md-3">
+				<h1>SOCIAL</h1>
+				<p><i class="fa fa-facebook-official"></i>Facebook</p>
+				<p><i class="fa fa-youtube-play"></i>YouTube</p>
+				<p><i class="fa fa-linkedin"></i>LinkedIn</p>
+				<p><i class="fa fa-twitter"></i>Twitter</p>
+			</div>
+			<div class="col-md-3 footer-img">
+				<h1>
+					Download App</h1>
+					<img src="img/g.png" height="100" width="150";>
+			</div>
+		</div>
+		<hr>
+		<!-- <p class="copyright">Made with<i class="fa fa-heart-o"></i></p> -->
+		<p class="copyright">Created by Designer</p>
+	</div>
+</section>
+<script>
+	function openmenu()
+	{
+document.getElementById("side-menu").style.display="block";
+document.getElementById("menu-btn").style.display="none";
+document.getElementById("close-btn").style.display="block";
+	}
+	function closemenu()
+	{
+document.getElementById("side-menu").style.display="none";
+document.getElementById("menu-btn").style.display="block";
+document.getElementById("close-btn").style.display="none";
+	}
+</script>
+</body>
+</html>
